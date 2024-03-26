@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/plugins/bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/plugins/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+      
+  
+    <div class="container"> 
+        <div class="d-flex align-items-center">
+           
+            <h3 class="display-4 text-center">Filmovi</h3>
+            </div> 
+      <div>
+        <form class="form-inline custom-search-bar d-flex">
+            <div class="input-group w-100">
+                <input type="text" class="form-control custom-search-input" id="intpTrazi" placeholder="Pretraži...">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-light custom-search-button" type="button"onclick="pretraziTablicu()">Traži</button>
+                </div>
+            </div>
+        </form>
+        <button class="btn dodaj-button float-left" id="otvoriModul">Dodaj Film</button>
+      
+        </div>
+        
+        <div class="tablica">
+            <table class="table custom-table" id="klijent">
+                <thead>
+                    <tr>
+                        <th scope="col">Link</th>
+                        <th scope="col">Naziv</th>
+                        <th scope="col">Godina</th>
+                        <th scope="col">Žanr</th>
+                        <th scope="col">Birao</th> 
+                        <th scope="col">Pregledano</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                    
+                </tbody>
+            </table>
+       
+
+      </div>
+     
+      <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Dodaj film</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form id="filmForm">
+                <div class="mb-3">
+                  <label for="link" class="form-label">Link</label>
+                  <input type="text" class="form-control" id="link" required>
+                </div>
+                <div class="mb-3">
+                  <label for="naziv" class="form-label">Naziv</label>
+                  <input type="text" class="form-control" id="naziv" required>
+                </div>
+                <div class="mb-3">
+                  <label for="godina" class="form-label">Godina</label>
+                  <input type="number" class="form-control" id="godina" required>
+                </div>
+                <div class="mb-3">
+                  <label for="zanrovi" class="form-label">Žanrovi (odvojeni zarezom)</label>
+                  <input type="text" class="form-control" id="zanrovi" required>
+                </div>
+                <div class="mb-3">
+                  <label for="birao" class="form-label">Birao (odvojeni zarezom)</label>
+                  <input type="text" class="form-control" id="birao" required>
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="pregledano">
+                  <label class="form-check-label" for="pregledano">Pregledano</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Spremi</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-text ">
+        <div class="podnozje">
+         <h3 class="display-4 text-center">Iva Vozab</h3>
+         <h3 class="display-7 text-center">2023/2024</h3>
+     
+        </div>
+        </div>
+     </div>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+      <script src="assets/plugins/jquery/jquery-3.6.0.min.js"></script>
+      <script src="assets/plugins/bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js"></script>
+      
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+      <script src="js/firebase_conf.js"></script>
+      <script src="js/administraciija.js"></script>
+      <script src="js/preusmjeravanje.js"></script>
+</body>
+</html>

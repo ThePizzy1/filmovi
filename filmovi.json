@@ -1,0 +1,28 @@
+{
+  "filmovi": [
+    {
+      "link": "https://www.example.com/film1",
+      "naziv": "Film 1",
+      "godina": 2020,
+      "zanrovi": ["akcija", "triler"],
+      "birao": ["gabi", "ivka"],
+      "pregledano": true
+    },
+    {
+      "link": "https://www.example.com/film2",
+      "naziv": "Film 2",
+      "godina": 2018,
+      "zanrovi": ["komedija", "drama"],
+      "birao": ["ivka"],
+      "pregledano": false
+    },
+    {
+      "link": "https://www.example.com/film3",
+      "naziv": "Film 3",
+      "godina": 2022,
+      "zanrovi": ["znanstvena fantastika"],
+      "birao": ["gabi"],
+      "pregledano": true
+    }
+  ]
+}
